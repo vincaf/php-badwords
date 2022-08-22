@@ -30,7 +30,7 @@
     afferrai;  e  allora,  impaurito  dalla  mia  violenza,  coi  denti  mi  ferì  lievemente  alla 
     mano.  Subito  la  furia  di  un  demone  si  impadronì  di  me.  Non  mi  conoscevo  più.";
 
-    $censoredWord = "gatto";
+    $censoredWord = $_GET["censoredWord"];
     $censoredString = str_replace($_GET['censoredWord'], "*****", $string);
 ?>
 
