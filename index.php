@@ -31,7 +31,7 @@
     mano.  Subito  la  furia  di  un  demone  si  impadronì  di  me.  Non  mi  conoscevo  più.";
 
     $censoredWord = "gatto";
-    $censoredString = str_replace($censoredWord, "*****", $string);
+    $censoredString = str_replace($_GET['censoredWord'], "*****", $string);
 ?>
 
 <!DOCTYPE html>
@@ -46,7 +46,7 @@
     <h1>Il Gatto Nero</h1>
     <h3>Parola censurata:
         <?php 
-            echo $censoredWord;
+            echo $_GET['censoredWord'];
         ?>
     </h3>
     <p>
